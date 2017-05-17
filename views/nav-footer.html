@@ -1,0 +1,40 @@
+<div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+            <ul>
+                <li ng-class="(title == 'About') ? 'is-active' : ''">
+                    <a ui-sref="about">
+                        <i class="fa fa-info-circle"></i>
+                        <span class="is-hidden-mobile">
+                            &nbsp; {{sections.about}}
+                        </span>
+                    </a>
+                </li>
+                <li ng-class="(title == 'Skills') ? 'is-active' : ''">
+                    <a ui-sref="skills">
+                        <i class="fa fa-paint-brush"></i>
+                        <span class="is-hidden-mobile">
+                            &nbsp; {{sections.skills}}
+                        </span>
+                    </a>
+                </li>
+                <li ng-class="(title == 'Work') ? 'is-active' : ''">
+                    <a ui-sref="work">
+                        <i class="fa fa-briefcase"></i>
+                        <span class="is-hidden-mobile">
+                            &nbsp; {{sections.work}}
+                        </span>
+                    </a>
+                </li>
+                <li ng-class="(title == 'School') ? 'is-active' : ''">
+                    <a ui-sref="school">
+                        <i class="fa fa-graduation-cap"></i>
+                        <span class="is-hidden-mobile">
+                            &nbsp; {{sections.school}}
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

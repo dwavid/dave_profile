@@ -1,0 +1,22 @@
+<section class="hero is-fullheight">
+    <div class="hero-head">
+        <ng-include src="'views/navbar.html'"></ng-include>
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <h1 class="title is-1">
+                        {{sections.skills}}
+                    </h1>
+                    <h2 class="subtitle">
+                        This is a list of stuff I'm good at! It's pretty cool.
+                    </h2>
+                    <br>
+                    <span ng-repeat="skill in mySkills | orderBy:'toString()'" class="tag is-large hasMargin">{{skill}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-include src="'views/nav-footer.html'"></ng-include>
+</section>

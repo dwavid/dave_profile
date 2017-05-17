@@ -1,0 +1,36 @@
+<section class="hero is-fullheight">
+    <div class="hero-head">
+        <ng-include src="'views/navbar.html'"></ng-include>
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <h1 class="title is-1">
+                        {{sections.work}}
+                    </h1>
+                    <h2 class="subtitle">
+                        Remember when I was talking all that big game about <strong>getting stuff done</strong>? This is the stuff I was talking about!
+                    </h2>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="columns">
+                        <div class="column">
+                            <a class="button is-primary is-large">
+                                View work
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a class="button is-primary is-large">
+                                View projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-include src="'views/nav-footer.html'"></ng-include>
+</section>

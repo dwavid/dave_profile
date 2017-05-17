@@ -1,0 +1,53 @@
+@import "../node_modules/bulma/bulma.sass";
+
+$x-primary-color: #00A1C1;
+$x-secondary-color: #9D6D4D;
+$light-bg: #F5F0ED;
+$color-adjuster: 5%;
+
+body {
+  .slowly {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .hasMargin {
+    margin: 5px;
+  }
+  //background-color: $light-bg;
+  //.hero {
+  //  background-color: $light-bg;
+  //}
+  a {
+    color: $x-secondary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .button{
+    &.is-primary {
+      background-color: $x-secondary-color;
+      color: white;
+      &:hover {
+        background-color: darken($x-secondary-color, $color-adjuster);
+      }
+    }
+  }
+  .hundo-height {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .is-fullwidth {
+    .container {
+      width: 100%;
+    }
+  }
+}
