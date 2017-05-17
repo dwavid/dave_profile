@@ -24,7 +24,7 @@ body {
   //  background-color: $light-bg;
   //}
   a {
-    color: $x-secondary-color;
+    color: $x-primary-color;
     text-decoration: none;
     &:hover {
       text-decoration: none;
@@ -32,10 +32,10 @@ body {
   }
   .button{
     &.is-primary {
-      background-color: $x-secondary-color;
+      background-color: $x-primary-color;
       color: white;
       &:hover {
-        background-color: darken($x-secondary-color, $color-adjuster);
+        background-color: darken($x-primary-color, $color-adjuster);
       }
     }
   }
