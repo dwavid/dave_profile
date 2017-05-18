@@ -1,10 +1,5 @@
 @import "../node_modules/bulma/bulma.sass";
 
-$x-primary-color: #00A1C1;
-$x-secondary-color: #9D6D4D;
-$light-bg: #F5F0ED;
-$color-adjuster: 5%;
-
 body {
   .slowly {
     -webkit-animation-duration: 2s;
@@ -19,28 +14,31 @@ body {
   .hasMargin {
     margin: 5px;
   }
-  //background-color: $light-bg;
-  //.hero {
-  //  background-color: $light-bg;
-  //}
-  a {
-    color: $x-primary-color;
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  .button{
-    &.is-primary {
-      background-color: $x-primary-color;
-      color: white;
-      &:hover {
-        background-color: darken($x-primary-color, $color-adjuster);
-      }
-    }
-  }
   .hundo-height {
     height: 100vh;
+  }
+}
+//@keyframes popup {
+//  75% {
+//    transform: translateY(-15px);
+//  }
+//  100% {
+//    transform: translateY(0px);
+//  }
+//}
+//
+//#eyebrow {
+//  animation: popup 4s 1s ease infinite;
+//}
+#eyebrow{
+  transform: translateY(0px);
+  transition: transform .5s;
+}
+svg {
+  &:hover {
+    #eyebrow {
+      transform: translateY(-15px);
+    }
   }
 }
 
@@ -49,5 +47,10 @@ body {
     .container {
       width: 100%;
     }
+  }
+  #dave-face {
+    height: auto;
+    width: auto;
+    max-height: 40vh;
   }
 }

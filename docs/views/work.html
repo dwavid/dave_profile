@@ -9,21 +9,25 @@
                     <h1 class="title is-1">
                         {{sections.work}}
                     </h1>
-                    <h2 class="subtitle">
+                    <div ng-show="showingWork !== 'main'">
+                        <ng-include src="'views/jobs.html'"></ng-include>
+                        <ng-include src="'views/projects.html'"></ng-include>
+                    </div>
+                    <h2 class="subtitle" ng-show="showingWork === 'main'">
                         Remember when I was talking all that big game about <strong>getting stuff done</strong>? This is the stuff I was talking about!
                     </h2>
                 </div>
             </div>
-            <div class="columns">
+            <div class="columns" ng-if="showingWork === 'main'">
                 <div class="column is-8 is-offset-2">
                     <div class="columns">
                         <div class="column">
-                            <a class="button is-primary is-large">
+                            <a ng-click="showingWork = 'jobs'" class="button is-primary is-fullwidth is-large">
                                 View work
                             </a>
                         </div>
                         <div class="column">
-                            <a class="button is-primary is-large">
+                            <a ng-click="showingWork = 'projects'" class="button is-fullwidth is-primary is-large">
                                 View projects
                             </a>
                         </div>
