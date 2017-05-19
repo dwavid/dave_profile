@@ -2,14 +2,14 @@
     <div class="hero-head">
         <ng-include src="'views/navbar.html'"></ng-include>
     </div>
-    <div class="hero-body">
+    <div class="hero-body animated fadeIn">
         <div class="container">
             <div class="columns">
                 <div class="column is-8 is-offset-2">
                     <h1 class="title is-1">
                         {{('work' | isState) ? main.sections.work : ('work.jobs' | isState) ? main.sections.jobs : ('work.projects' | isState) ? main.sections.projects : ''}}
                     </h1>
-                    <ui-view></ui-view>
+                    <ui-view class="animated fadeIn"></ui-view>
                     <h2 class="subtitle" ng-if="'work' | isState">
                         Remember when I was talking all that big game about <strong>getting stuff done</strong>? This is the stuff I was talking about!
                     </h2>

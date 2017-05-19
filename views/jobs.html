@@ -7,7 +7,7 @@
         </li>
     </ul>
 </div>
-<div ng-repeat="job in main.jobs" ng-if="main.viewingJob == $index">
+<div class="animated fadeIn" ng-repeat="job in main.jobs" ng-if="main.viewingJob == $index">
     <h2 class="title is-3">{{job.company}}</h2>
     <h3 class="subtitle">{{job.title}}</h3>
     <div class="content">

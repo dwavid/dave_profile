@@ -7,13 +7,13 @@
         </li>
     </ul>
 </div>
-<div ng-repeat="project in main.projects" ng-if="main.viewingProj == $index">
+<div class="animated fadeIn" ng-repeat="project in main.projects" ng-if="main.viewingProj == $index">
     <h2 class="title is-3">{{project.name}}</h2>
     <h3 class="subtitle">{{project.title}}</h3>
-    <span ng-repeat="site in project.websites">
-        <a href="{{site}}" target="_blank">{{site}}</a>
-        {{$last ? '' : ' | '}}
-    </span>
+    <!--<span ng-repeat="site in project.websites">-->
+        <!--<a href="{{site}}" target="_blank">{{site}}</a>-->
+        <!--{{$last ? '' : ' | '}}-->
+    <!--</span>-->
     <div class="content">
         <ul>
             <li ng-repeat="bullet in project.bullets">
