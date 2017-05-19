@@ -7,13 +7,13 @@
             <div class="columns">
                 <div class="column is-8 is-offset-2">
                     <h1 class="title is-1">
-                        {{sections.skills}}
+                        {{main.sections.skills}}
                     </h1>
                     <h2 class="subtitle">
                         This is a list of stuff I'm good at! It's pretty cool.
                     </h2>
                     <br>
-                    <span ng-repeat="skill in mySkills | orderBy:'toString()'" class="tag is-large hasMargin">{{skill}}</span>
+                    <span ng-repeat="skill in main.mySkills | orderBy:'toString()'" class="tag is-large hasMargin">{{skill}}</span>
                 </div>
             </div>
         </div>

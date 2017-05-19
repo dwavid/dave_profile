@@ -51,7 +51,7 @@ gulp.task('scripts', function() {
         './js/directives/*.js'])
         .pipe(concat('all.js'))
         .pipe(rename({suffix: '.min'}))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./docs/assets/js'))
 });
 

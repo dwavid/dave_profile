@@ -1,12 +1,12 @@
 <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
+    <nav class="tabs is-medium is-boxed is-fullwidth">
         <div class="container">
             <ul>
                 <li ng-class="(title == 'About') ? 'is-active' : ''">
                     <a ui-sref="about">
                         <i class="fa fa-info-circle"></i>
                         <span class="is-hidden-mobile">
-                            &nbsp; {{sections.about}}
+                            &nbsp; {{main.sections.about}}
                         </span>
                     </a>
                 </li>
@@ -14,7 +14,7 @@
                     <a ui-sref="skills">
                         <i class="fa fa-paint-brush"></i>
                         <span class="is-hidden-mobile">
-                            &nbsp; {{sections.skills}}
+                            &nbsp; {{main.sections.skills}}
                         </span>
                     </a>
                 </li>
@@ -22,7 +22,7 @@
                     <a ui-sref="work">
                         <i class="fa fa-briefcase"></i>
                         <span class="is-hidden-mobile">
-                            &nbsp; {{sections.work}}
+                            &nbsp; {{main.sections.work}}
                         </span>
                     </a>
                 </li>
@@ -30,7 +30,7 @@
                     <a ui-sref="school">
                         <i class="fa fa-graduation-cap"></i>
                         <span class="is-hidden-mobile">
-                            &nbsp; {{sections.school}}
+                            &nbsp; {{main.sections.school}}
                         </span>
                     </a>
                 </li>
